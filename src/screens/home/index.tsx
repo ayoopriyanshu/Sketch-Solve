@@ -43,6 +43,27 @@ export default function Home() {
         ctx.lineWidth = 3;
       }
     }
+
+    const script = document.createElement("script");
+    script.src =
+      "https://cdnjs.cloudfare.com/ajax/libs/mathjax/2.7.9/config/TeX-MML-AM_CHTML.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      });
+    };
+
+    return () => {
+      document.head.removeChild(script);
+    };
   }, []);
 
   const sendData = async () => {
@@ -51,7 +72,7 @@ export default function Home() {
     if (canvas) {
       const response = await axios({
         method: "post",
-        url: `${import.meta.env.VITE_API_URL}/calculate`,
+        url: "http://localhost:8900/calculate",
         data: {
           image: canvas.toDataURL("image/png"),
           dict_of_vars: dictOfVars,
