@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# ✏️ Sketch&Solve
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sketch&Solve is an Apple's new iOS18 Math notes app clone in which we can draw/write and calculate or analyze whatever we draw using GEMINI API. The idea was to use canvas component of React and whatever we draw on that canvas would given as an input to api as an image where it assess the image and give you result with an expression which the app render it to the react app's frontend using LaTeX. 
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **👉 Draw on Canvas**: Users can freely draw on the canvas using their mouse or trackpad.
+- **👉 Mathematical Expression Rendering**: The results from GEMINI API come as mathematical expressions, which are automatically rendered as LaTeX in the app for easy interpretation.
+- **👉 Undo and Reset Features**: Allows users to undo their previous drawing actions or reset the entire canvas, providing flexibility in the drawing process.
+- **👉 Canvas Integration**: Built using the React Canvas component, allowing users to draw freely on the app with the help of smooth drawing capabilities.
+- **👉 LaTeX Expression Rendering**: Displays mathematical expressions returned from the GEMINI API using LaTeX rendering for clear visualization of results.
+- **👉 Interactive UI**: Smooth and responsive design for a seamless user experience.
 
-## Expanding the ESLint configuration
+## 🚀 Live App
+**Try App** -  
+https://sketch-solve-react.onrender.com/
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📸 Screenshots
 
-- Configure the top-level `parserOptions` property like this:
+<img src="https://github.com/user-attachments/assets/e2aafb90-b377-4799-8afe-fc5f6e0ea3c9" width=400 />
+<img src="https://github.com/user-attachments/assets/d7c45e54-492c-4991-8124-e8bfb004714b" width=500 height=200 />
+<img src="https://github.com/user-attachments/assets/6696a674-8a8e-4aff-ab02-78568bce85c9" width=400 />
+<img src="https://github.com/user-attachments/assets/2b9fb898-62ae-4c07-bbd0-b19ae3f29472" width=500 height=200 />
+<img src="https://github.com/user-attachments/assets/17181869-9444-4198-9e93-1dae6afece23" width=400 />
+<img src="https://github.com/user-attachments/assets/39ad2720-cf3f-4878-9a19-ce35dd3ed817" width=600 height=200 />
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ⚙️ Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 🧩 Deploy React App
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Navigate to the project folder.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Create .env.local file in the root and add a variable VITE_API_URL with the backend api.
+
+- Run this command
+   ```bash
+   npm i
+   npm run dev
+    
+### ⚒️ Backend FastAPI
+
+- Navigate to the project folder and open the backend folder separately.
+
+- Create a .env file in root and add GEMINI_API_KEY variable with the api key as its value.
+
+- Install all requirements
+   ```bash
+   pip install -r requirements.txt
+   
+- Create a virtusl enviroment using this command
+   ```bash
+   python3 -m venv .venv
+   
+- Activate the enviroment and run main.py
+   ```bash
+   ./.venv/Scripts/actiavte.ps1
+   python main.py
+
+## 🧰 Technology Stack
+
+- **Frontend**: React, TypeScript, HTML Canvas Element, LaTeX (MathJax), TailwindCSS, React Router, React Draggable, etc
+- **Backend**: Python, GEMINI API, FastApi, GenAi, Uvicorn, Pydantic, CORSMiddleware
+- **Development Tools**: VSCode, Prettier, Vite, ESLint
+- **Deployement**: Render
+
+## 📇 Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayoopriyanshu/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:priyanshusharma3377@gmail.com)
