@@ -4,6 +4,7 @@ import { ColorSwatch, Group } from "@mantine/core";
 import { Button } from "../../components/ui/button.tsx";
 import Draggable from "react-draggable";
 import axios from "axios";
+import img from "../../assets/logo.png";
 
 interface Response {
   expr: string;
@@ -239,6 +240,15 @@ export default function Home() {
             zIndex: 20,
           }}
         >
+          <img
+            src={img}
+            alt="logo_art"
+            className="mt-1 mr-3"
+            style={{
+              width: "35px",
+              height: "40px",
+            }}
+          />
           Sketch&Solve
         </h1>
         <div className="grid grid-cols-4 gap-2 z-10 p-1">
@@ -269,7 +279,7 @@ export default function Home() {
           </Group>
           <Button
             onClick={sendData}
-            className="z-20 bg-black text-white hover:bg-slate-400 hover:text-black"
+            className="z-20 bg-blue-300 text-black hover:bg-slate-400 hover:text-black"
             variant="default"
             color="black"
           >
@@ -301,7 +311,7 @@ export default function Home() {
           <Draggable
             key={index}
             defaultPosition={latexPosition}
-            onStop={(e, data) => setLatexPosition({ x: data.x, y: data.y })}
+            onStop={(_e, data) => setLatexPosition({ x: data.x, y: data.y })}
           >
             <div className="absolute p-2 text-black rounded shadow-lg border-r-7">
               <div className="latex-content">{latex}</div>
