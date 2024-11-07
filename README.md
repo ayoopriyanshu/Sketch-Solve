@@ -1,6 +1,6 @@
 # ✏️ Sketch&Solve
 
-Sketch&Solve is an Apple's new iOS18 Math notes app clone in which we can draw/write and calculate or analyze whatever we draw using GEMINI API. The idea was to use canvas component of React and whatever we draw on that canvas would given as an input to api as an image where it assess the image and give you result with an expression which the app render it to the react app's frontend using LaTeX. 
+Sketch&Solve is an Apple's new iOS18 Math notes inspired app in which we can draw/write and calculate or analyze whatever we draw using GEMINI API. The idea was to use canvas component of React and whatever we draw on that canvas would given as an input to api as an image where it assess the image and give you result with an expression which the app render it to the react app's frontend using LaTeX. 
 
 ## ✨ Features
 
