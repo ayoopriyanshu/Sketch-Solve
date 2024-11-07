@@ -12,7 +12,7 @@ Sketch&Solve is an Apple's new iOS18 Math notes app clone in which we can draw/w
 - **❤️ Interactive UI**: Smooth and responsive design for a seamless user experience.
 
 ## 🚀 Live App
-**Try App** -  
+**Try App**(For the first time reload the page 2-3 time if it doesnt work) -  
 https://sketch-solve-react.onrender.com/
 
 ## 📸 Screenshots
