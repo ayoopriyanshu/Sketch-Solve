@@ -60,7 +60,7 @@ https://sketch-solve-react.onrender.com/
 
 - **Frontend**: React, TypeScript, HTML Canvas Element, LaTeX (MathJax), TailwindCSS, React Router, React Draggable, etc
 - **Backend**: Python, GEMINI API, FastApi, GenAi, Uvicorn, Pydantic, CORSMiddleware
-- **Development Tools**: VSCode, Prettier, Vite, ESLint
+- **Development Tools**: VSCode, Prettier, Vite, ESLint and Prompt Engineering
 - **Deployement**: Render
 
 ## 📇 Contact
