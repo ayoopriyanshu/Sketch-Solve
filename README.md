@@ -4,12 +4,12 @@ Sketch&Solve is an Apple's new iOS18 Math notes app clone in which we can draw/w
 
 ## ✨ Features
 
-- **👉 Draw on Canvas**: Users can freely draw on the canvas using their mouse or trackpad.
-- **👉 Mathematical Expression Rendering**: The results from GEMINI API come as mathematical expressions, which are automatically rendered as LaTeX in the app for easy interpretation.
-- **👉 Undo and Reset Features**: Allows users to undo their previous drawing actions or reset the entire canvas, providing flexibility in the drawing process.
-- **👉 Canvas Integration**: Built using the React Canvas component, allowing users to draw freely on the app with the help of smooth drawing capabilities.
-- **👉 LaTeX Expression Rendering**: Displays mathematical expressions returned from the GEMINI API using LaTeX rendering for clear visualization of results.
-- **👉 Interactive UI**: Smooth and responsive design for a seamless user experience.
+- **✍️ Draw on Canvas**: Users can freely draw on the canvas using their mouse or trackpad.
+- **🧮 Mathematical Expression Rendering**: The results from GEMINI API come as mathematical expressions, which are automatically rendered as LaTeX in the app for easy interpretation.
+- **↩️ Undo and Reset Features**: Allows users to undo their previous drawing actions or reset the entire canvas, providing flexibility in the drawing process.
+- **🎨 Canvas Integration**: Built using the React Canvas component, allowing users to draw freely on the app with the help of smooth drawing capabilities.
+- **🖥️ LaTeX Expression Rendering**: Displays mathematical expressions returned from the GEMINI API using LaTeX rendering for clear visualization of results.
+- **❤️ Interactive UI**: Smooth and responsive design for a seamless user experience.
 
 ## 🚀 Live App
 **Try App** -  
